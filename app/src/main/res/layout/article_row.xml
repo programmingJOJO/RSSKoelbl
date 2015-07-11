@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical" android:padding="8dip">
+
+	<!-- Article ID -->
+	<TextView android:id="@+id/article_id" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:paddingBottom="1dip"
+		android:textSize="18dip" android:textStyle="bold" android:visibility="gone"/>
+
+	<!-- Feed ID -->
+	<TextView android:id="@+id/feed_id" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" style="@style/smallText"
+		android:visibility="gone" />
+
+	<TextView android:id="@+id/page_url" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:visibility="gone" />
+
+	<!-- title -->
+	<TextView android:id="@+id/title" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:paddingBottom="1dip"
+		android:textSize="18dip" />
+
+	<!-- published date -->
+	<TextView android:id="@+id/pub_date" android:layout_below="@id/title"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:paddingBottom="3dip" style="@style/smallText" />
+</RelativeLayout>

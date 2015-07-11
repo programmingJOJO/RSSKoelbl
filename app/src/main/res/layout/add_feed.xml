@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/add_feed_layout" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:orientation="vertical">
+
+	<EditText android:id="@+id/txtUrl" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginRight="10dip"
+		android:layout_marginLeft="10dip"
+		android:inputType="textUri" android:hint="@string/xml_placeholder"
+		android:singleLine="true" />
+
+	<LinearLayout android:id="@+id/wrapper"
+		android:layout_below="@id/txtUrl" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:weightSum="1.0">
+
+		<Button android:id="@+id/btnCancel" android:layout_width="0dp"
+			android:layout_weight=".50" android:layout_height="wrap_content"
+			android:text="@string/btn_cancel"
+			android:layout_marginTop="8dip" android:layout_marginLeft="8dip"
+			android:windowSoftInputMode="stateVisible|adjustPan" style="@style/button" />
+
+		<Button android:id="@+id/btnSubmit" android:layout_width="0dp"
+			android:layout_weight=".50" android:layout_height="wrap_content"
+			android:text="@string/btn_add" android:layout_marginTop="8dip"
+			android:layout_marginLeft="8dip" style="@style/button"
+			android:layout_toRightOf="@id/btnCancel"/>
+
+	</LinearLayout>
+
+	<TextView android:id="@+id/errorMessage" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:padding="10dip"
+		android:layout_marginTop="15dip" android:layout_below="@id/wrapper"
+		style="@style/smallText" />
+
+	<ListView android:id="@+id/predefined_list"
+		android:layout_below="@id/errorMessage" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:divider="#bababa"
+		android:dividerHeight="1dp" android:cacheColorHint="#00000000" />
+
+</RelativeLayout>

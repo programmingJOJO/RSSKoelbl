@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mi.rssKoelbl"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_rss"
+        android:label="@string/app_name"
+        android:theme="@style/background" >
+        <service android:name="mi.rssKoelbl.UpdateArticlesService" />
+
+        <receiver android:name="mi.rssKoelbl.BootReciever" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="mi.rssKoelbl.WidgetProvider"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <provider
+            android:name="mi.rssKoelbl.ContentProviderDb"
+            android:authorities="contentProviderAuthorities" />
+
+        <activity
+            android:name="mi.rssKoelbl.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Add New Site Activity -->
+        <activity
+            android:name="mi.rssKoelbl.AddNewFeed"
+            android:label="@string/add_feed"
+            android:parentActivityName="mi.rssKoelbl.MainActivity" />
+
+        <!-- List rss items Activity -->
+        <activity
+            android:name="mi.rssKoelbl.ArticleList"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/article_list"
+            android:parentActivityName="mi.rssKoelbl.MainActivity" />
+
+        <!-- Display website Activity -->
+        <activity
+            android:name="mi.rssKoelbl.DisplayWebsite"
+            android:configChanges="keyboardHidden|orientation"
+            android:parentActivityName="mi.rssKoelbl.MainActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <!-- Display settings Activity -->
+        <activity
+            android:name="mi.rssKoelbl.SetPreferenceActivity"
+            android:label="@string/settings"
+            android:parentActivityName="mi.rssKoelbl.MainActivity" />
+        <activity
+            android:name="mi.rssKoelbl.NotificationReceiverActivity"
+            android:label=""
+            android:parentActivityName="mi.rssKoelbl.MainActivity" />
+    </application>
+
+</manifest>

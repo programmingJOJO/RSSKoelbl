@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical" android:padding="5dip">
+
+	<!-- feed rss url / hidden by default -->
+	<TextView android:id="@+id/feed_rss_url" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:visibility="gone" />
+
+	<!-- feed title -->
+	<TextView android:id="@+id/title" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:paddingTop="8dip"
+		android:paddingLeft="8dip" android:paddingBottom="4dip"
+		android:textSize="18dip" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Jojo/Documents/StudioProjects/RSSKoelbl/app/src/main/res/layout/predefined_feed_row.xml -->

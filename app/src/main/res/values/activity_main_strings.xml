@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text">Edit Seite</string>
+	<string name="settings">Einstellungen</string>
+	<string name="article_list">Artikel Übersicht</string>
+	<string name="about">Information</string>
+	<string name="Dialog_Message">Aktualisiere ...</string>
+</resources>

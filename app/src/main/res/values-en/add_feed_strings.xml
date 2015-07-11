@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="btn_add">Add</string>
+	<string name="add_feed">Add feed</string>
+	<string name="btn_cancel">Cancel</string>
+	<string name="xml_placeholder">http://www.website.de/feed.xml</string>
+</resources>

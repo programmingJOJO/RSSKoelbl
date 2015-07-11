@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="notify">Notifikation</string>
+	<string name="show_on_widget">Widgetanzeige</string>
+	<string name="btn_save">Speichern</string>
+</resources>

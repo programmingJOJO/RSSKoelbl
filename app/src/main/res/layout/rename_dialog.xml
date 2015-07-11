@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<EditText android:id="@+id/txtRenameTitle"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginRight="10dip" android:layout_marginLeft="10dip"
+		android:inputType="textUri" android:singleLine="true" />
+
+	<CheckBox android:id="@+id/notifyBox" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_below="@id/txtRenameTitle"
+		android:text="@string/notify" />
+
+	<CheckBox android:id="@+id/widgetableBox"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_below="@id/notifyBox" android:text="@string/show_on_widget" />
+	
+	<TextView android:id="@+id/dialogErrorMessage" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:padding="10dip"
+		android:layout_marginTop="15dip" android:layout_below="@id/widgetableBox"
+		style="@style/smallText" />
+
+	<LinearLayout android:id="@+id/renameWrapper"
+		android:layout_below="@id/dialogErrorMessage" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:weightSum="1.0">
+
+		<Button android:id="@+id/btnRenameCancel" android:layout_width="0dp"
+			android:layout_weight=".50" android:layout_height="wrap_content"
+			android:text="@string/btn_cancel"
+			android:layout_marginTop="8dip" android:layout_marginLeft="8dip"
+			android:windowSoftInputMode="stateVisible|adjustPan" style="@style/button" />
+
+		<Button android:id="@+id/btnRenameSubmit" android:layout_width="0dp"
+			android:layout_weight=".50" android:layout_height="wrap_content"
+			android:text="@string/btn_save" android:layout_marginTop="8dip"
+			android:layout_marginLeft="8dip" style="@style/button"
+			android:layout_toRightOf="@id/btnRenameCancel" />
+
+	</LinearLayout>
+
+</RelativeLayout>

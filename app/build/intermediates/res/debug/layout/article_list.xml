@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/articleListLayout" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:orientation="vertical">
+
+	<ListView android:id="@android:id/list" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:divider="#bababa"
+		android:dividerHeight="1dp" android:cacheColorHint="#00000000" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Jojo/Documents/StudioProjects/RSSKoelbl/app/src/main/res/layout/article_list.xml -->
