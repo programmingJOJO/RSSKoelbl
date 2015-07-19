@@ -24,8 +24,11 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <!-- From: file:/C:/Users/Jojo/Documents/StudioProjects/RSSKoelbl/app/src/main/res/values-en/activity_main_strings.xml -->
     <eat-comment/>
-    <string name="Dialog_Message">Update ...</string>
-    <string name="about">Information</string>
+    <string name="Dialog_Message">Update …</string>
+    <string name="action_about">Information</string>
+    <string name="action_new_feed">New Feed</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_settings">Preferences</string>
     <!-- From: file:/C:/Users/Jojo/Documents/StudioProjects/RSSKoelbl/app/src/main/res/values-en/add_feed_strings.xml -->
     <eat-comment/>
     <string name="add_feed">Add feed</string>
@@ -51,11 +54,6 @@
     <!-- From: file:/C:/Users/Jojo/Documents/StudioProjects/RSSKoelbl/app/src/main/res/values-en/rename_dialog_strings.xml -->
     <eat-comment/>
     <string name="notify">Notification</string>
-    <!-- From: file:/C:/Users/Jojo/Documents/StudioProjects/RSSKoelbl/app/src/main/res/values-en/activity_main_strings.xml -->
-    <eat-comment/>
-    <string name="settings">Preferences</string>
-    <!-- From: file:/C:/Users/Jojo/Documents/StudioProjects/RSSKoelbl/app/src/main/res/values-en/rename_dialog_strings.xml -->
-    <eat-comment/>
     <string name="show_on_widget">Display widget</string>
     <!-- From: file:/C:/Users/Jojo/Documents/StudioProjects/RSSKoelbl/app/src/main/res/values-en/activity_main_strings.xml -->
     <eat-comment/>
@@ -83,7 +81,7 @@
         <item name="android:background">#0aff83</item>
     </style>
     <style name="smallText">
-        <item name="android:textSize">15dip</item>
+        <item name="android:textSize">15sp</item>
         <item name="android:textColor">#18a9ff</item>
     </style>
 </resources>

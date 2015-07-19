@@ -27,7 +27,6 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -50,9 +49,9 @@ public class MainActivity extends Activity {
 
 	private String[] sqliteIds;
 
-	private static String TAG_ID = "id";
-	private static String TAG_TITLE = "title";
-	private static String TAG_LINK = "link";
+	private static final String TAG_ID = "id";
+	private static final String TAG_TITLE = "title";
+	private static final String TAG_LINK = "link";
 	public static String TAG_DATE = "pub_date";
 
 	// List view

@@ -764,8 +764,7 @@ containing a value of this type.
         public static final int ic_action_new=0x7f020057;
         public static final int ic_action_refresh=0x7f020058;
         public static final int ic_action_settings=0x7f020059;
-        public static final int ic_launcher=0x7f02005a;
-        public static final int ic_rss=0x7f02005b;
+        public static final int ic_rss=0x7f02005a;
     }
     public static final class id {
         public static final int action_about=0x7f0d005b;
@@ -919,20 +918,22 @@ containing a value of this type.
         public static final int abc_searchview_description_voice=0x7f06000a;
         public static final int abc_shareactionprovider_share_with=0x7f06000b;
         public static final int abc_shareactionprovider_share_with_application=0x7f06000c;
-        public static final int about=0x7f06000e;
-        public static final int add_feed=0x7f06000f;
-        public static final int app_name=0x7f060010;
-        public static final int article_list=0x7f060011;
-        public static final int btn_add=0x7f060012;
-        public static final int btn_cancel=0x7f060013;
-        public static final int btn_ok=0x7f060014;
-        public static final int btn_save=0x7f060015;
-        public static final int no_feeds=0x7f060016;
-        public static final int notify=0x7f060017;
-        public static final int settings=0x7f060018;
-        public static final int show_on_widget=0x7f060019;
-        public static final int text=0x7f06001a;
-        public static final int xml_placeholder=0x7f06001b;
+        public static final int action_about=0x7f06000e;
+        public static final int action_new_feed=0x7f06000f;
+        public static final int action_refresh=0x7f060010;
+        public static final int action_settings=0x7f060011;
+        public static final int add_feed=0x7f060012;
+        public static final int app_name=0x7f060013;
+        public static final int article_list=0x7f060014;
+        public static final int btn_add=0x7f060015;
+        public static final int btn_cancel=0x7f060016;
+        public static final int btn_ok=0x7f060017;
+        public static final int btn_save=0x7f060018;
+        public static final int no_feeds=0x7f060019;
+        public static final int notify=0x7f06001a;
+        public static final int show_on_widget=0x7f06001b;
+        public static final int text=0x7f06001c;
+        public static final int xml_placeholder=0x7f06001d;
     }
     public static final class style {
         /** 

@@ -1,6 +1,6 @@
 package mi.rssKoelbl;
 
-public class Feed extends Object{
+public class Feed {
 	public int feed_id;
 	public String title;
 	public String rss_url;

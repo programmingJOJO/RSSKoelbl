@@ -6,7 +6,7 @@
 	<!-- Article ID -->
 	<TextView android:id="@+id/article_id" android:layout_width="fill_parent"
 		android:layout_height="wrap_content" android:paddingBottom="1dip"
-		android:textSize="18dip" android:textStyle="bold" android:visibility="gone"/>
+		android:textSize="18sp" android:textStyle="bold" android:visibility="gone"/>
 
 	<!-- Feed ID -->
 	<TextView android:id="@+id/feed_id" android:layout_width="fill_parent"
@@ -19,7 +19,7 @@
 	<!-- title -->
 	<TextView android:id="@+id/title" android:layout_width="fill_parent"
 		android:layout_height="wrap_content" android:paddingBottom="1dip"
-		android:textSize="18dip" />
+		android:textSize="18sp" />
 
 	<!-- published date -->
 	<TextView android:id="@+id/pub_date" android:layout_below="@id/title"

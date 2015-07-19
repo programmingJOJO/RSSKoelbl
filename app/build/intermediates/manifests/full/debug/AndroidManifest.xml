@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="16"
-        android:targetSdkVersion="18" />
+        android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
@@ -76,7 +76,7 @@
         <!-- Display settings Activity -->
         <activity
             android:name="mi.rssKoelbl.SetPreferenceActivity"
-            android:label="@string/settings"
+            android:label="@string/action_settings"
             android:parentActivityName="mi.rssKoelbl.MainActivity" />
         <activity
             android:name="mi.rssKoelbl.NotificationReceiverActivity"

@@ -57,8 +57,6 @@ class RssDB {
 		if (doesFeedExists(contentUri, "feed_id", String.valueOf(feed.feed_id))) {
 			context.getContentResolver().update(contentUri, values, "feed_id = ?", 
 					new String[] { String.valueOf(feed.feed_id) });
-		} else {
-			// Feed does not exist.
 		}
 	}
 	
@@ -148,7 +146,7 @@ class RssDB {
 			}
 			c.close();
 		} catch (SQLException e) {
-			Log.e("GETFEEDS", e.toString());
+			Log.e("GET_FEEDS", e.toString());
 		}
 		
 		return feedList;

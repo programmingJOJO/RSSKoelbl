@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="text">Edit site</string>
-	<string name="settings">Preferences</string>
+	<string name="action_settings">Preferences</string>
 	<string name="article_list">Article overview</string>
-	<string name="about">Information</string>
-	<string name="Dialog_Message">Update ...</string>
+	<string name="action_about">Information</string>
+	<string name="action_new_feed">New Feed</string>
+	<string name="action_refresh">Refresh</string>
+	<string name="Dialog_Message">Update …</string>
 </resources>

@@ -10,7 +10,7 @@
 	<!-- feed title -->
 	<TextView android:id="@+id/title" android:layout_width="fill_parent"
 		android:layout_height="wrap_content" android:paddingTop="8dip"
-		android:paddingLeft="8dip" android:paddingBottom="4dip"
-		android:textSize="18dip" />
+		android:paddingLeft="8dip" android:paddingRight="8dip" android:paddingBottom="4dip"
+		android:textSize="18sp" />
 
 </RelativeLayout>

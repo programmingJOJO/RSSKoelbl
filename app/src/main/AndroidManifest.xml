@@ -68,7 +68,7 @@
         
         <!-- Display settings Activity -->
         <activity android:name=".SetPreferenceActivity"
-           android:label="@string/settings"
+           android:label="@string/action_settings"
            android:parentActivityName="mi.rssKoelbl.MainActivity" />
         
         <activity android:name="mi.rssKoelbl.NotificationReceiverActivity"

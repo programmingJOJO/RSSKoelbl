@@ -7,12 +7,12 @@
 	<!-- web site title -->
 	<TextView android:id="@+id/widget_title" android:layout_width="fill_parent"
 		android:layout_height="wrap_content" android:paddingTop="8dip"
-		android:paddingLeft="8dip" android:paddingBottom="4dip"
-		android:textSize="18dip" style="@style/background"/>
+		android:paddingLeft="8dip" android:paddingRight="8dip" android:paddingBottom="4dip"
+		android:textSize="18sp" style="@style/background"/>
 
 	<!-- web site url -->
 	<TextView android:id="@+id/widget_text" android:layout_height="wrap_content"
-		android:layout_width="wrap_content" android:paddingLeft="8dip"
+		android:layout_width="wrap_content" android:paddingRight="8dip" android:paddingLeft="8dip"
 		android:paddingBottom="6dip" style="@style/smallText"
 		android:layout_below="@id/widget_title" />
 

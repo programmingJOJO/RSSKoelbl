@@ -15,7 +15,7 @@
 
 		<Button android:id="@+id/btnCancel" android:layout_width="0dp"
 			android:layout_weight=".50" android:layout_height="wrap_content"
-			android:text="@string/btn_cancel"
+			android:text="@string/btn_cancel" android:layout_marginStart="8dp"
 			android:layout_marginTop="8dip" android:layout_marginLeft="8dip"
 			android:windowSoftInputMode="stateVisible|adjustPan" style="@style/button" />
 
@@ -23,7 +23,7 @@
 			android:layout_weight=".50" android:layout_height="wrap_content"
 			android:text="@string/btn_add" android:layout_marginTop="8dip"
 			android:layout_marginLeft="8dip" style="@style/button"
-			android:layout_toRightOf="@id/btnCancel"/>
+			android:layout_marginStart="8dp"/>
 
 	</LinearLayout>
 

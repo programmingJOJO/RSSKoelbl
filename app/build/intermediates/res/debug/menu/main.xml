@@ -1,29 +1,29 @@
-
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <item
         android:id="@+id/action_add_feed"
         android:orderInCategory="100"
         android:showAsAction="always"
+        android:title="@string/action_new_feed"
         android:icon="@drawable/ic_action_new"/>
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:showAsAction="ifRoom"
-        android:title="@string/settings"
+        android:title="@string/action_settings"
         android:icon="@drawable/ic_action_settings"/>
     <item
         android:id="@+id/action_about"
         android:orderInCategory="100"
         android:showAsAction="ifRoom"
-        android:title="@string/about"/>
+        android:title="@string/action_about"/>
     
     <item
         android:id="@+id/action_refresh_articles"
         android:orderInCategory="100"
         android:showAsAction="always"
+        android:title="@string/action_refresh"
         android:icon="@drawable/ic_action_refresh"/>
-    
 
 </menu>
 <!-- From: file:/C:/Users/Jojo/Documents/StudioProjects/RSSKoelbl/app/src/main/res/menu/main.xml -->

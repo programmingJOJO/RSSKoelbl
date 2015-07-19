@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Jojo\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.0.1\support-v4-19.0.1.jar"
+        jar="C:\Users\Jojo\Documents\StudioProjects\RSSKoelbl\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\libs\internal_impl-22.0.0.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="587da9a481ffd341d2fa091704489b89845ddacd">
-        <dex dex="C:\Users\Jojo\Documents\StudioProjects\RSSKoelbl\app\build\intermediates\pre-dexed\debug\support-v4-19.0.1-daf8ba43229243a7c98dfdb288059e05e15284fe.jar" />
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\Jojo\Documents\StudioProjects\RSSKoelbl\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-28be3f173a58dd5e7ddcacd52d66c70e0bf27cc7.jar" />
     </item>
     <item
         jar="C:\Users\Jojo\Documents\StudioProjects\RSSKoelbl\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.0.1\jars\classes.jar"
@@ -14,6 +14,20 @@
         revision="22.0.1"
         sha1="f71a6822470c9eb659d4f4a6cb57b780b35f058b">
         <dex dex="C:\Users\Jojo\Documents\StudioProjects\RSSKoelbl\app\build\intermediates\pre-dexed\debug\classes-9eafdb687e82b389a11078677c759a8ef172ba7a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jojo\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\Jojo\Documents\StudioProjects\RSSKoelbl\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-3440a2277942b1debb107ec6b8325d06990ff0e9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jojo\Documents\StudioProjects\RSSKoelbl\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\Jojo\Documents\StudioProjects\RSSKoelbl\app\build\intermediates\pre-dexed\debug\classes-f05f18a5d40ac7f4a09e543525b7098e1b8cf08c.jar" />
     </item>
 
 </items>

@@ -56,8 +56,7 @@ public class ContentProviderDb extends ContentProvider{
 			String[] selectionArgs, String sortOrder) {
 		String table = getTableName(uri);
 		SQLiteDatabase database = dbHelper.getReadableDatabase();
-		Cursor cursor = database.query(table, projection, selection, selectionArgs, null, null, sortOrder);
-		return cursor;
+		return database.query(table, projection, selection, selectionArgs, null, null, sortOrder);
 	}
 
 	@Override

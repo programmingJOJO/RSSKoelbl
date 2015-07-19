@@ -26,9 +26,6 @@ public class UpdateArticlesService extends Service {
 
 	@Override
 	public void onCreate() {
-		AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(this);
-		RemoteViews remoteViews = new RemoteViews(this.getPackageName(), R.layout.widget_layout);
-		ComponentName thisWidget = new ComponentName(this, WidgetProvider.class);
 
 		super.onCreate();
 	}
@@ -36,7 +33,7 @@ public class UpdateArticlesService extends Service {
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
 
-		Log.v("SERVICE", System.currentTimeMillis() + ": Service gestartet");
+		Log.v("SERVICE", System.currentTimeMillis() + ": Service started");
 
 		refreshArticles longTask2 = new refreshArticles();
 		longTask2.execute();
@@ -125,6 +122,6 @@ public class UpdateArticlesService extends Service {
 	@Override
 	public void onDestroy() {
 		// The service is no longer used and is being destroyed
-		Log.v("SERVICE", System.currentTimeMillis() + ": Service zerst�rt");
+		Log.v("SERVICE", System.currentTimeMillis() + ": Service terminated");
 	}
 }
