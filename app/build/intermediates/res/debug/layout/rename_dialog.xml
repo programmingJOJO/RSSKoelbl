@@ -3,14 +3,8 @@
 	android:layout_width="fill_parent" android:layout_height="fill_parent"
 	android:orientation="vertical">
 
-	<EditText android:id="@+id/txtRenameTitle"
-		android:layout_width="fill_parent" android:layout_height="wrap_content"
-		android:layout_marginRight="10dip" android:layout_marginLeft="10dip"
-		android:inputType="textUri" android:singleLine="true" />
-
 	<CheckBox android:id="@+id/notifyBox" android:layout_width="wrap_content"
-		android:layout_height="wrap_content" android:layout_below="@id/txtRenameTitle"
-		android:text="@string/notify" />
+		android:layout_height="wrap_content" android:text="@string/notify" />
 
 	<CheckBox android:id="@+id/widgetableBox"
 		android:layout_width="wrap_content" android:layout_height="wrap_content"

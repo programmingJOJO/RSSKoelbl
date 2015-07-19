@@ -768,8 +768,8 @@ containing a value of this type.
         public static final int ic_rss=0x7f02005b;
     }
     public static final class id {
-        public static final int action_about=0x7f0d005c;
-        public static final int action_add_feed=0x7f0d005a;
+        public static final int action_about=0x7f0d005b;
+        public static final int action_add_feed=0x7f0d0059;
         public static final int action_bar=0x7f0d001c;
         public static final int action_bar_activity_content=0x7f0d0000;
         public static final int action_bar_container=0x7f0d001b;
@@ -781,8 +781,8 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f0d0001;
         public static final int action_menu_presenter=0x7f0d0002;
         public static final int action_mode_close_button=0x7f0d0024;
-        public static final int action_refresh_articles=0x7f0d005d;
-        public static final int action_settings=0x7f0d005b;
+        public static final int action_refresh_articles=0x7f0d005c;
+        public static final int action_settings=0x7f0d005a;
         public static final int activity_chooser_view_content=0x7f0d0025;
         public static final int add_feed_layout=0x7f0d003e;
         public static final int always=0x7f0d0013;
@@ -790,15 +790,15 @@ containing a value of this type.
         public static final int article_id=0x7f0d0046;
         public static final int beginning=0x7f0d000f;
         public static final int btnCancel=0x7f0d0041;
-        public static final int btnRenameCancel=0x7f0d0054;
-        public static final int btnRenameSubmit=0x7f0d0055;
+        public static final int btnRenameCancel=0x7f0d0053;
+        public static final int btnRenameSubmit=0x7f0d0054;
         public static final int btnSubmit=0x7f0d0042;
         public static final int checkbox=0x7f0d002d;
         public static final int collapseActionView=0x7f0d0014;
         public static final int default_activity_button=0x7f0d0028;
         public static final int dialog=0x7f0d0018;
         public static final int dialogButtonOK=0x7f0d003d;
-        public static final int dialogErrorMessage=0x7f0d0052;
+        public static final int dialogErrorMessage=0x7f0d0051;
         public static final int disableHome=0x7f0d0009;
         public static final int dropdown=0x7f0d0019;
         public static final int edit_query=0x7f0d0030;
@@ -822,14 +822,14 @@ containing a value of this type.
         public static final int never=0x7f0d0016;
         public static final int none=0x7f0d0012;
         public static final int normal=0x7f0d0007;
-        public static final int notifyBox=0x7f0d0050;
+        public static final int notifyBox=0x7f0d004f;
         public static final int page_url=0x7f0d0048;
         public static final int predefined_list=0x7f0d0044;
         public static final int progress_circular=0x7f0d0004;
         public static final int progress_horizontal=0x7f0d0005;
         public static final int pub_date=0x7f0d0049;
         public static final int radio=0x7f0d002f;
-        public static final int renameWrapper=0x7f0d0053;
+        public static final int renameWrapper=0x7f0d0052;
         public static final int search_badge=0x7f0d0032;
         public static final int search_bar=0x7f0d0031;
         public static final int search_button=0x7f0d0033;
@@ -850,16 +850,15 @@ containing a value of this type.
         public static final int text=0x7f0d003c;
         public static final int title=0x7f0d002b;
         public static final int top_action_bar=0x7f0d0020;
-        public static final int txtRenameTitle=0x7f0d004f;
         public static final int txtUrl=0x7f0d003f;
         public static final int up=0x7f0d0021;
         public static final int url=0x7f0d004d;
         public static final int useLogo=0x7f0d000e;
-        public static final int website=0x7f0d0056;
-        public static final int widget_layout=0x7f0d0057;
-        public static final int widget_text=0x7f0d0059;
-        public static final int widget_title=0x7f0d0058;
-        public static final int widgetableBox=0x7f0d0051;
+        public static final int website=0x7f0d0055;
+        public static final int widget_layout=0x7f0d0056;
+        public static final int widget_text=0x7f0d0058;
+        public static final int widget_title=0x7f0d0057;
+        public static final int widgetableBox=0x7f0d0050;
         public static final int withText=0x7f0d0017;
         public static final int wrapper=0x7f0d0040;
     }

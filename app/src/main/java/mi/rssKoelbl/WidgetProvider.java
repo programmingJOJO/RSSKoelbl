@@ -17,7 +17,7 @@ public class WidgetProvider extends AppWidgetProvider {
 		ComponentName thisWidget = new ComponentName(context,WidgetProvider.class);
 		int[] allWidgetIds = appWidgetManager.getAppWidgetIds(thisWidget);
 		for (int widgetId : allWidgetIds) {
-			String visibleText = "Bitte wähle zuerst einen Feed für das Widget aus.", visibleTitle = "Kein Feed ausgewählt";
+			String visibleText = "Bitte wÃ¤hle zuerst einen Feed fÃ¼r das Widget aus.", visibleTitle = "Kein Feed ausgewÃ¤hlt";
 			
 			Feed feed = rssDb.getWidgetFeed();
 			if (feed.title != null) {
@@ -26,7 +26,7 @@ public class WidgetProvider extends AppWidgetProvider {
 				if (article.title != null) {
 					visibleText = article.title;
 				} else {
-					visibleText = "Keine Artikel für diesen Feed vorhanden.";
+					visibleText = "Keine Artikel vorhanden.";
 				}
 			}
 	
