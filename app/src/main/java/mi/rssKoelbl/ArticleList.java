@@ -1,6 +1,5 @@
 package mi.rssKoelbl;
 
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.util.Calendar;
 import java.util.Date;
@@ -62,7 +61,7 @@ public class ArticleList extends ListActivity {
         int feed_id = Integer.parseInt(i.getStringExtra("id"));
         
 		feed = rssDB.getFeed(feed_id);
-        String feed_rss_url = feed.rss_url;
+        //String feed_rss_url = feed.rss_url;
 		
 		// Background handling
         new loadFeedArticles().execute(feed_id);
@@ -196,8 +195,6 @@ public class ArticleList extends ListActivity {
         	articles = rssDB.getArticles(feed_id);
         	articleList.clear();
 
-
-
             // looping through each item
             for(Article article : articles){
                 // creating new HashMap
@@ -235,15 +232,18 @@ public class ArticleList extends ListActivity {
             String returnDate;
 
             try {
-                String format = "EEE, dd MMM yyyy kk:mm:ss zzz";
-                SimpleDateFormat sdf = new SimpleDateFormat(format);
+                String format = "EEE, dd MMM yyyy HH:mm:ss zzz";
+                SimpleDateFormat sdf = new SimpleDateFormat(format, Locale.US);
                 Date formatedDate = sdf.parse(dateRaw);
 
                 Calendar c = Calendar.getInstance();
                 c.setTime(formatedDate);
 
                 String minute = c.get(Calendar.MINUTE) > 9 ? String.valueOf(c.get(Calendar.MINUTE)) : "0"+String.valueOf(c.get(Calendar.MINUTE));
-                returnDate = ""+c.get(Calendar.DAY_OF_MONTH)+"."+c.get(Calendar.MONTH)+"."+c.get(Calendar.YEAR)+" "+c.get(Calendar.HOUR_OF_DAY)+":"+minute;
+                String hour = c.get(Calendar.HOUR_OF_DAY) > 9 ? String.valueOf(c.get(Calendar.HOUR_OF_DAY)) : "0"+String.valueOf(c.get(Calendar.HOUR_OF_DAY));
+                String day = c.get(Calendar.DAY_OF_MONTH) > 9 ? String.valueOf(c.get(Calendar.DAY_OF_MONTH)) : "0"+String.valueOf(c.get(Calendar.DAY_OF_MONTH));
+                String month = c.get(Calendar.MONTH) > 8 ? String.valueOf(c.get(Calendar.MONTH)+1) : "0"+String.valueOf(c.get(Calendar.MONTH)+1);
+                returnDate = day+"."+month+"."+c.get(Calendar.YEAR)+" "+hour+":"+minute;
                 return returnDate;
             } catch (ParseException e) {
                 e.printStackTrace();
