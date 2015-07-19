@@ -1,8 +1,14 @@
 package mi.rssKoelbl;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.util.Calendar;
+import java.util.Date;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 
 import android.app.ListActivity;
 import android.app.ProgressDialog;
@@ -189,37 +195,60 @@ public class ArticleList extends ListActivity {
         	
         	articles = rssDB.getArticles(feed_id);
         	articleList.clear();
-        	
+
+
+
             // looping through each item
             for(Article article : articles){
                 // creating new HashMap
                 HashMap<String, String> map = new HashMap<String, String>();
-                 
+                String formattedDate = parseDate(article.published_at);
+
                 // adding each child node to HashMap key => value
                 map.put(TAG_ID, String.valueOf(article.article_id));
                 map.put(TAG_FEED_ID, String.valueOf(article.feed_id));
                 map.put(TAG_TITLE, article.title);
                 map.put(TAG_LINK, String.valueOf(article.url));
-                map.put(TAG_DATE, String.valueOf(article.published_at));
-            	
+                map.put(TAG_DATE, formattedDate);
+
                 // adding HashList to ArrayList
                 articleList.add(map);
             }
 			 // updating UI from Background Thread
 			runOnUiThread(new Runnable() {
-			    @Override
-				public void run() {
-			    	ListAdapter adapter = new SimpleAdapter(
-					        ArticleList.this,
-					        articleList, R.layout.article_row,
-					        new String[] { TAG_ID, TAG_FEED_ID, TAG_LINK, TAG_TITLE, TAG_DATE },
-					        new int[] { R.id.article_id, R.id.feed_id, R.id.page_url, R.id.title, R.id.pub_date });
-					 
-					// Updating list view
-			        setListAdapter(adapter);
-			    }
-			});
+                @Override
+                public void run() {
+                    ListAdapter adapter = new SimpleAdapter(
+                            ArticleList.this,
+                            articleList, R.layout.article_row,
+                            new String[]{TAG_ID, TAG_FEED_ID, TAG_LINK, TAG_TITLE, TAG_DATE},
+                            new int[]{R.id.article_id, R.id.feed_id, R.id.page_url, R.id.title, R.id.pub_date});
+
+                    // Updating list view
+                    setListAdapter(adapter);
+                }
+            });
 			return null;
+        }
+
+        public String parseDate (String dateRaw){
+            String returnDate;
+
+            try {
+                String format = "EEE, dd MMM yyyy kk:mm:ss zzz";
+                SimpleDateFormat sdf = new SimpleDateFormat(format);
+                Date formatedDate = sdf.parse(dateRaw);
+
+                Calendar c = Calendar.getInstance();
+                c.setTime(formatedDate);
+
+                String minute = c.get(Calendar.MINUTE) > 9 ? String.valueOf(c.get(Calendar.MINUTE)) : "0"+String.valueOf(c.get(Calendar.MINUTE));
+                returnDate = ""+c.get(Calendar.DAY_OF_MONTH)+"."+c.get(Calendar.MONTH)+"."+c.get(Calendar.YEAR)+" "+c.get(Calendar.HOUR_OF_DAY)+":"+minute;
+                return returnDate;
+            } catch (ParseException e) {
+                e.printStackTrace();
+                return dateRaw;
+            }
         }
  
         @Override
