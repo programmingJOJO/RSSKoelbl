@@ -104,18 +104,15 @@ public class AddNewFeed extends Activity {
 			runOnUiThread(new Runnable() {
                 @Override
 				public void run() {
-                	String preFeeds [][] = { 
-                			{"Fakult�t Informatik", "http://www.th-nuernberg.de/institutionen/fakultaeten/informatik/startseite/rss2.xml"},
+                	String preFeeds [][] = {
                 			{"Spiegel Politik", "http://m.spiegel.de/politik/index.rss"},
                 			{"Spiegel Wissenschaft", "http://m.spiegel.de/wissenschaft/index.rss"},
                 			{"Spiegel Netzwelt", "http://m.spiegel.de/netzwelt/index.rss"},
                 			{"Wetter", "http://www.wetter.com/wetter_rss/wetter.xml"},
-                			{"Heise Jobs", "http://jobs.heise.de/rss.xml"},
                 			{"Die Welt", "http://www.welt.de/?service=Rss"},
                 			{"Die Welt: Politik", "http://www.welt.de/politik/?service=Rss"},
                 			{"Die Welt: Wissenschaft", "http://www.welt.de/wissenschaft/?service=Rss"},
-                			{"Google News", "http://news.google.de/news/feeds?output=rss"},
-                			{"Test Feed f�r Kurs", "http://www.informatik.fh-nuernberg.de/professors/roth/SS2014/MobileInternet/rss/rss.xml"}
+                			{"Google News", "http://news.google.de/news/feeds?output=rss"}
                 	};
                     
                     // loop through each feed
@@ -171,7 +168,7 @@ public class AddNewFeed extends Activity {
                 RssDB rssDb = new RssDB(getApplicationContext());
                 rssDb.addFeed(feed);
                 
-                List<Article> articles = new ArrayList<Article>();
+                List<Article> articles;
                 articles = rssParser.getArticles(rss_url);
                 
             	int feed_id = rssDb.getFeedIdByURL(rss_url);
