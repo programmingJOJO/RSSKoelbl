@@ -78,10 +78,10 @@ public class AddNewFeed extends Activity {
 						// Valid URL
 						new LoadRSSFeed().execute(url);
 					} else {
-						errorMessage.setText("Url ist nicht valide.");
+						errorMessage.setText(R.string.not_valid);
 					}
 				} else {
-					errorMessage.setText("Bitte geben Sie eine Url ein.");
+					errorMessage.setText(R.string.error_empty);
 				}
 			}
 		});
@@ -150,7 +150,7 @@ public class AddNewFeed extends Activity {
 		protected void onPreExecute() {
             super.onPreExecute();
             pDialog = new ProgressDialog(AddNewFeed.this);
-            pDialog.setMessage("Lade RSS-Informationen ...");
+            pDialog.setMessage("...");
             pDialog.setIndeterminate(false);
             pDialog.setCancelable(false);
             pDialog.show();
@@ -188,7 +188,7 @@ public class AddNewFeed extends Activity {
                 runOnUiThread(new Runnable() {
                     @Override
 					public void run() {
-                        errorMessage.setText("Die URL wurde leider nicht gefunden. Versuchen Sie es nochmal");
+                        errorMessage.setText(R.string.not_found);
                     }
                 });
             }

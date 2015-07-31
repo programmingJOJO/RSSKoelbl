@@ -158,6 +158,7 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <!-- From: file:/C:/Users/Jojo/Documents/StudioProjects/RSSKoelbl/app/src/main/res/values/activity_main_strings.xml -->
     <eat-comment/>
+    <string name="about">Diese Anwendung wurde im Rahmen eines Seminars erstellt.</string>
     <string name="action_about">Information</string>
     <string name="action_new_feed">Neuer Feed</string>
     <string name="action_refresh">Aktualisieren</string>
@@ -181,12 +182,31 @@
     <!-- From: file:/C:/Users/Jojo/Documents/StudioProjects/RSSKoelbl/app/src/main/res/values/rename_dialog_strings.xml -->
     <eat-comment/>
     <string name="btn_save">Speichern</string>
+    <!-- From: file:/C:/Users/Jojo/Documents/StudioProjects/RSSKoelbl/app/src/main/res/values/context_menu.xml -->
+    <eat-comment/>
+    <string name="context_delete">Löschen</string>
+    <string name="context_edit">Bearbeiten</string>
+    <string name="context_title">Eigenschaften</string>
+    <!-- From: file:/C:/Users/Jojo/Documents/StudioProjects/RSSKoelbl/app/src/main/res/values/error_messages.xml -->
+    <eat-comment/>
+    <string name="error_empty">Bitte geben Sie eine URL ein.</string>
+    <string name="no_articles">Keine Artikel vorhanden.</string>
     <!-- From: file:/C:/Users/Jojo/Documents/StudioProjects/RSSKoelbl/app/src/main/res/values/feed_list_strings.xml -->
     <eat-comment/>
     <string name="no_feeds">Keine Feeds ausgewählt. Füge einen Feed hinzu!</string>
+    <!-- From: file:/C:/Users/Jojo/Documents/StudioProjects/RSSKoelbl/app/src/main/res/values/error_messages.xml -->
+    <eat-comment/>
+    <string name="not_found">Die URL wurde leider nicht gefunden. Versuchen Sie bitte es nochmal.</string>
+    <string name="not_valid">Die URL ist nicht valide.</string>
     <!-- From: file:/C:/Users/Jojo/Documents/StudioProjects/RSSKoelbl/app/src/main/res/values/rename_dialog_strings.xml -->
     <eat-comment/>
     <string name="notify">Notifikation</string>
+    <!-- From: file:/C:/Users/Jojo/Documents/StudioProjects/RSSKoelbl/app/src/main/res/values/error_messages.xml -->
+    <eat-comment/>
+    <string name="select_widget_feed">Bitte wähle zuerst einen Feed für das Widget aus.</string>
+    <string name="select_widget_title">Kein Feed ausgewählt</string>
+    <!-- From: file:/C:/Users/Jojo/Documents/StudioProjects/RSSKoelbl/app/src/main/res/values/rename_dialog_strings.xml -->
+    <eat-comment/>
     <string name="show_on_widget">Widgetanzeige</string>
     <!-- From: file:/C:/Users/Jojo/Documents/StudioProjects/RSSKoelbl/app/src/main/res/values/activity_main_strings.xml -->
     <eat-comment/>

@@ -7,4 +7,5 @@
 	<string name="action_new_feed">Neuer Feed</string>
 	<string name="action_refresh">Aktualisieren</string>
 	<string name="Dialog_Message">Aktualisiere …</string>
+	<string name="about">Diese Anwendung wurde im Rahmen eines Seminars erstellt.</string>
 </resources>

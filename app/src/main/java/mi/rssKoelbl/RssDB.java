@@ -117,12 +117,7 @@ class RssDB {
 	
 	public void deleteFeed(Integer feedId) {
 		Uri contentUri = Uri.withAppendedPath(ContentProviderDb.CONTENT_URI, FEEDS_TABLE);
-		context.getContentResolver().delete(contentUri, "feed_id="+feedId.toString(), null);
-	}
-	
-	public void deleteArticle(Integer feedId) {
-		Uri contentUri = Uri.withAppendedPath(ContentProviderDb.CONTENT_URI, ARTICLES_TABLE);
-		context.getContentResolver().delete(contentUri, "feed_id="+feedId.toString(), null);
+		context.getContentResolver().delete(contentUri, "feed_id=" + feedId.toString(), null);
 	}
 	
 	public List<Feed> getFeeds() {
@@ -163,6 +158,11 @@ class RssDB {
 		values.put("guid", a.guid);
 		Uri contentUri = Uri.withAppendedPath(ContentProviderDb.CONTENT_URI, ARTICLES_TABLE);
 		context.getContentResolver().insert(contentUri, values);
+	}
+
+	public void deleteArticles(Integer feedId) {
+		Uri contentUri = Uri.withAppendedPath(ContentProviderDb.CONTENT_URI, ARTICLES_TABLE);
+		context.getContentResolver().delete(contentUri, "feed_id=" + feedId.toString(), null);
 	}
 	
 	public Article getArticleByWidgetFeed(int f_id) {

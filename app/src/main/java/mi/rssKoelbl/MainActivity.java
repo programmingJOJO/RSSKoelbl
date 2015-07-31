@@ -83,7 +83,7 @@ public class MainActivity extends Activity {
 		dialog_about.setTitle("Information");
 		// set the about dialog components - text and button
 		TextView text = (TextView) dialog_about.findViewById(R.id.text);
-		text.setText("Diese Anwendung wurde im Rahmen einer Seminars erstellt.");
+		text.setText(R.string.about);
 		Button dialogButton_about = (Button) dialog_about.findViewById(R.id.dialogButtonOK);
 		dialogButton_about.setOnClickListener(new OnClickListener() {
 			@Override
@@ -95,7 +95,7 @@ public class MainActivity extends Activity {
 		// Rename dialog
 		dialog_rename = new Dialog(this);
 		dialog_rename.setContentView(R.layout.rename_dialog);
-		dialog_rename.setTitle("Bearbeiten");
+		dialog_rename.setTitle(R.string.context_edit);
 		Button dialogButtonRenameCancel = (Button) dialog_rename.findViewById(R.id.btnRenameCancel);
 		dialogButtonRenameCancel.setOnClickListener(new OnClickListener() {
 			@Override
@@ -109,7 +109,7 @@ public class MainActivity extends Activity {
 
 		SharedPreferences mySharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
 		String updatePeriod = mySharedPreferences.getString("updatePeriod", "5");
-		if (!updatePeriod.equals("aus")) {
+		if (!updatePeriod.equals("aus") && !updatePeriod.equals("off")) {
 			int timeInMinInterval = Integer.valueOf(updatePeriod);
 			long interval = DateUtils.MINUTE_IN_MILLIS * timeInMinInterval;
 
@@ -219,7 +219,7 @@ public class MainActivity extends Activity {
 			super.onPreExecute();
 			pDialog = new ProgressDialog(
 					MainActivity.this);
-			pDialog.setMessage("Lade feeds ...");
+			pDialog.setMessage("...");
 			pDialog.setIndeterminate(false);
 			pDialog.setCancelable(false);
 			pDialog.show();
@@ -285,9 +285,9 @@ public class MainActivity extends Activity {
 	@Override
 	public void onCreateContextMenu(ContextMenu menu, View view, ContextMenuInfo menuInfo) {
 		if (view.getId() == R.id.list) {
-			menu.setHeaderTitle("Eigenschaften");
-			menu.add(Menu.NONE, 0, 0, "Löschen");
-			menu.add(Menu.NONE, 1, 0, "Bearbeiten");
+			menu.setHeaderTitle(R.string.context_title);
+			menu.add(Menu.NONE, 0, 0, R.string.context_delete);
+			menu.add(Menu.NONE, 1, 0, R.string.context_edit);
 		}
 	}
 
@@ -305,6 +305,7 @@ public class MainActivity extends Activity {
 				// Delete the feed
 				feedId = Integer.parseInt(sqliteIds[info.position]);
 				rssDb.deleteFeed(feedId);
+				rssDb.deleteArticles(feedId);
 
 				// Reload activity to display current feeds
 				Intent intent = getIntent();
